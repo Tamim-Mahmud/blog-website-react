@@ -1,0 +1,72 @@
+[
+    {
+        "id": "65378f9a8ed04cafbbb69d8f",
+        "picture": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=996&t=st=1698140302~exp=1698140902~hmac=f7d5605d3c4411c60c68fd58f4e4214c4fb69c4266d003fe4ec4436e2b7b0ab5",
+        "courseName": "Introduction to Information Technology and Computer Science: A Beginner's Guide",
+        "courseTeacher": "Decker Hopkins",
+        "courseTeacherPics": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "email": "deckerhopkins@sloganaut.com",
+        "phone": "+1 (824) 428-2412",
+        "address": "298 Ridge Court, Brambleton, Nevada, 5790",
+        "registered": "2019-07-13T05:29:45 -06:00",
+        "isRead": false,
+        "isBookmarked": false,
+        "tags": [
+            "begineer",
+            "programming",
+            "IT"
+        ]
+    },
+    {
+        "id": "65378f9ab932d25f09436f29",
+        "picture": "https://img.freepik.com/free-photo/medium-shot-man-working-laptop_23-2150323506.jpg?w=900&t=st=1698140326~exp=1698140926~hmac=4296012f488d1c58476986f33f7dc09274c7cc60bfd10cdcc512afb5bbf3386e",
+        "courseName": "Exploring the Basics of Information Technology: A Comprehensive Starter Course",
+        "courseTeacher": "Aida Hanson",
+        "courseTeacherPics": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "email": "aidahanson@sloganaut.com",
+        "phone": "+1 (935) 490-3244",
+        "address": "533 Hill Street, Springville, Michigan, 6707",
+        "registered": "2017-03-20T11:15:04 -06:00",
+        "isRead": false,
+        "isBookmarked": false,
+        "tags": [
+            "Programming",
+            "IT Service",
+            "CISCO"
+        ]
+    },
+    {
+        "id": "65378f9a635517eac5528ba1",
+        "picture": "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?w=996&t=st=1698140350~exp=1698140950~hmac=30b6256e6cb09b1c76cebb1fba58ea5edff076ad6e5445a6ddee25824f6c40ca",
+        "courseName": "Fundamental Concepts of IT and Networking for Novices: A Hands-On Approach",
+        "courseTeacher": "Rhonda Stark",
+        "courseTeacherPics": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "email": "rhondastark@sloganaut.com",
+        "phone": "+1 (917) 406-3139",
+        "address": "661 Flatlands Avenue, Harold, Alabama, 5200",
+        "registered": "2018-08-13T07:59:15 -06:00",
+        "isRead": false,
+        "isBookmarked": false,
+        "tags": [
+            "Begineer",
+            "Programming"
+        ]
+    },
+    {
+        "id": "65378f9a21bf7e9f8626aabd",
+        "picture": "https://img.freepik.com/free-photo/businessman-touching-brain-working-artificial-intelligence_587448-5042.jpg?t=st=1698140395~exp=1698143995~hmac=9e3fb3986862d09e8d3073685bbf3d11d7e3ff92f2c633b63d1f1d0a0b011949&w=1380",
+        "courseName": "Getting Started with Cybersecurity and Information Assurance: A Beginner's Primer",
+        "courseTeacher": "Deidre Coleman",
+        "courseTeacherPics": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "email": "deidrecoleman@sloganaut.com",
+        "phone": "+1 (931) 557-3269",
+        "address": "990 Ivan Court, Glenshaw, Rhode Island, 5543",
+        "registered": "2022-05-30T06:17:22 -06:00",
+        "isRead": false,
+        "isBookmarked": false,
+        "tags": [
+            "beginners",
+            "programming"
+        ]
+    }
+]
