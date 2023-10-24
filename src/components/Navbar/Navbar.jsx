@@ -4,7 +4,7 @@ import profileImage from '../../../images/boy2.png'
 const navbar = () => {
   return (
     <>
-      <div className="navbar bg-slate-50 sticky top-0">
+      <div className="navbar bg-slate-50 z-50 sticky top-0">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">Knowledge Cafe</a>
         </div>
