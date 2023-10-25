@@ -6,7 +6,7 @@ const navbar = () => {
     <>
       <div className="navbar bg-slate-50 z-50 sticky top-0">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Knowledge Cafe</a>
+          <a className="btn btn-ghost normal-case text-2xl text-blue-600">VlogVenture.com</a>
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
