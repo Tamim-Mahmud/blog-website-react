@@ -1,4 +1,6 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Cart = (props) => {
   const {
@@ -14,9 +16,12 @@ const Cart = (props) => {
     phone,
     readTime,
   } = props.course;
-//   console.log(props);
+  //   console.log(props);
   const handleBookmark = props.handleBookmark;
   const handleRead = props.handleRead;
+
+  const notify = () => toast("Bookmark Added !");
+
   return (
     <div>
       <div className="card  bg-base-100 shadow-xl">
@@ -38,7 +43,7 @@ const Cart = (props) => {
             </div>
             <div className="flex items-center gap-3">
               <h1>{readTime} min read</h1>
-              <p>
+              <p onClick={notify}>
                 <span
                   onClick={() => handleBookmark(courseName)}
                   className="cursor-pointer hover:bg-blue-500"
@@ -70,7 +75,7 @@ const Cart = (props) => {
             </h3>
           </div>
           <div>
-            <span onClick={()=>handleRead(readTime)}>
+            <span onClick={() => handleRead(readTime)}>
               <h2 className=" inline cursor-pointer	 underline mt-3 font-sans text-blue-800 hover:text-blue-600 ">
                 Mark as read
               </h2>
@@ -78,6 +83,9 @@ const Cart = (props) => {
           </div>
         </div>
       </div>
+      <ToastContainer
+        
+      />
     </div>
   );
 };

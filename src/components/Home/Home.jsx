@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import SideBar from "../SideBar/SideBar";
-import { getBookmarksToStorage, getLocalStorageTime, setBookmarksToStorage, setLocalStorageTime } from "../../localStorage";
+import {
+  getBookmarksToStorage,
+  getLocalStorageTime,
+  setBookmarksToStorage,
+  setLocalStorageTime,
+} from "../../localStorage";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
@@ -19,12 +26,11 @@ const Home = () => {
     }
   };
   const handleRead = (readTime) => {
-    const previousTime=getLocalStorageTime(readTime);
-    if(previousTime){
-      const newTime= previousTime + parseInt(readTime);
+    const previousTime = getLocalStorageTime(readTime);
+    if (previousTime) {
+      const newTime = previousTime + parseInt(readTime);
       setTotalReadingTime(newTime);
-    }
-    else{
+    } else {
       setTotalReadingTime(readTime);
     }
     // console.log(typeof(readTime));
@@ -36,14 +42,13 @@ const Home = () => {
       .then((data) => setCourses(data));
   }, []);
 
-  useEffect(()=>{
-    const previousTime= setLocalStorageTime();
+  useEffect(() => {
+    const previousTime = setLocalStorageTime();
     setTotalReadingTime(parseInt(previousTime));
 
     //for local storage bookmarks
     const previousBookmarks = setBookmarksToStorage();
     setBookmarks(previousBookmarks);
-
   }, [totalReadingTime]);
   return (
     <>
