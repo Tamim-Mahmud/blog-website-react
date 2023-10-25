@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import SideBar from "../SideBar/SideBar";
+import { getBookmarksToStorage, getLocalStorageTime, setBookmarksToStorage, setLocalStorageTime } from "../../localStorage";
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
-  const [readingTime, setReadingTime] = useState(0);
+  const [totalReadingTime, setTotalReadingTime] = useState(0);
   const handleBookmark = (courseName) => {
+    const previousBookmark = getBookmarksToStorage(courseName);
     if (bookmarks) {
       const temp = [courseName, ...bookmarks];
       setBookmarks(temp);
@@ -17,13 +19,13 @@ const Home = () => {
     }
   };
   const handleRead = (readTime) => {
-    
-    if (readTime) {
-      let temp = parseInt(readTime) + (readingTime);
-      console.log(temp)
-      setReadingTime(temp);
-    } else {
-      setReadingTime(parseInt(readTime));
+    const previousTime=getLocalStorageTime(readTime);
+    if(previousTime){
+      const newTime= previousTime + parseInt(readTime);
+      setTotalReadingTime(newTime);
+    }
+    else{
+      setTotalReadingTime(readTime);
     }
     // console.log(typeof(readTime));
   };
@@ -33,6 +35,16 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
+
+  useEffect(()=>{
+    const previousTime= setLocalStorageTime();
+    setTotalReadingTime(parseInt(previousTime));
+
+    //for local storage bookmarks
+    const previousBookmarks = setBookmarksToStorage();
+    setBookmarks(previousBookmarks);
+
+  }, [totalReadingTime]);
   return (
     <>
       <div className=" grid grid-cols-3 gap-8 mt-5">
@@ -47,7 +59,7 @@ const Home = () => {
           ))}
         </div>
         <div className="col-start-3">
-          <SideBar bookmarks={bookmarks} readingTime={readingTime} />
+          <SideBar bookmarks={bookmarks} totalReadingTime={totalReadingTime} />
         </div>
       </div>
     </>
